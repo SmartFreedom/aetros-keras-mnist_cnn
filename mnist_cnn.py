@@ -17,10 +17,11 @@ from keras import backend as K
 import aetros.backend
 
 job = aetros.backend.start_job('marcj/mnist_cnn')
+job.upload_file(__file__)
 
 batch_size = job.get_parameter('batch_size')
 nb_classes = 10
-nb_epoch = 12
+nb_epoch = 50
 
 # input image dimensions
 img_rows, img_cols = 28, 28
