@@ -21,7 +21,7 @@ job.upload_file(__file__)
 
 batch_size = job.get_parameter('batch_size')
 nb_classes = 10
-nb_epoch = 50
+nb_epoch = 10
 
 # input image dimensions
 img_rows, img_cols = 28, 28
