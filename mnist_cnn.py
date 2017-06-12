@@ -84,7 +84,7 @@ model.add(Dense(nb_classes))
 model.add(Activation('softmax'))
 
 model.compile(loss='categorical_crossentropy',
-              optimizer='adadelta',
+              optimizer='adam',
               metrics=['accuracy'])
 
 # hooks into the model registering a new callback, visualize its layers automatically, and sends automatically metrics,
